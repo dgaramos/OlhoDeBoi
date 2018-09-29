@@ -7,24 +7,31 @@
 //
 
 import UIKit
+import WebKit
 
 class AboutViewController: UIViewController {
 
+    @IBOutlet weak var webView: WKWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        webViewLoad(url: "https://github.com/dgaramos")
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func displayGitHub() {
+        webViewLoad(url: "https://github.com/dgaramos")
     }
-    */
+    
+    func webViewLoad(url: String){
+        let url = URL(string:url)!
+        let request = URLRequest(url: url)
+        webView.load(request)
+    }
+    
+    @IBAction func close() {
+        dismiss(animated: true, completion: nil)
+    }
+    
 
 }

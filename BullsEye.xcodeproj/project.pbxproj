@@ -14,6 +14,8 @@
 		403DFA28215F02EF000FAC45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 403DFA26215F02EF000FAC45 /* LaunchScreen.storyboard */; };
 		403DFA33215F02EF000FAC45 /* BullsEyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403DFA32215F02EF000FAC45 /* BullsEyeTests.swift */; };
 		403DFA3E215F02EF000FAC45 /* BullsEyeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403DFA3D215F02EF000FAC45 /* BullsEyeUITests.swift */; };
+		403DFA4C215F47A5000FAC45 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403DFA4B215F47A4000FAC45 /* AboutViewController.swift */; };
+		40795D7121601414009518C6 /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40795D7021601414009518C6 /* RulesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		403DFA39215F02EF000FAC45 /* BullsEyeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BullsEyeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		403DFA3D215F02EF000FAC45 /* BullsEyeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullsEyeUITests.swift; sourceTree = "<group>"; };
 		403DFA3F215F02EF000FAC45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		403DFA4B215F47A4000FAC45 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		40795D7021601414009518C6 /* RulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +103,12 @@
 			children = (
 				403DFA1D215F02EA000FAC45 /* AppDelegate.swift */,
 				403DFA1F215F02EA000FAC45 /* ViewController.swift */,
+				403DFA4B215F47A4000FAC45 /* AboutViewController.swift */,
 				403DFA21215F02EA000FAC45 /* Main.storyboard */,
 				403DFA24215F02EF000FAC45 /* Assets.xcassets */,
 				403DFA26215F02EF000FAC45 /* LaunchScreen.storyboard */,
 				403DFA29215F02EF000FAC45 /* Info.plist */,
+				40795D7021601414009518C6 /* RulesViewController.swift */,
 			);
 			path = BullsEye;
 			sourceTree = "<group>";
@@ -256,7 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				403DFA4C215F47A5000FAC45 /* AboutViewController.swift in Sources */,
 				403DFA20215F02EA000FAC45 /* ViewController.swift in Sources */,
+				40795D7121601414009518C6 /* RulesViewController.swift in Sources */,
 				403DFA1E215F02EA000FAC45 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,6 +442,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BullsEye/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -451,6 +460,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BullsEye/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
