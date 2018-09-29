@@ -1,0 +1,18 @@
+#Xcode
+#
+## User settings
+
+xcuserdata/
+
+*.xcscmblueprint
+*.xccheckout
+
+Build/
+DerivedData/
+*.moved-aside
+*.pbxuser
+!default.pbxuser
+*.modelv3
+!default.modelv3
+*.perspectivev3
+!default.perspectivev3
